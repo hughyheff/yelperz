@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well mtop-50">
+      <center><h1 class="center-it">Hungry?</h1></center>
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+<br>
+      <br>
+      <%= form_tag results_path do %>
+        <div class="form-group">
+          <%= text_field_tag :food, nil, placeholder: "What Are You In the Mood For?", 
+                class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= text_field_tag :location, nil, placeholder: "City, State", 
+                class: "form-control" %>
+        </div>
+        <center>
+        <div class="form-group center-it">
+          <%= submit_tag "Let's Eat", class: "btn btn-info" %>
+        </div>
+        </center>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
